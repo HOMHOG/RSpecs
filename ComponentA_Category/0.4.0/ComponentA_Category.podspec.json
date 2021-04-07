@@ -1,0 +1,31 @@
+{
+  "name": "ComponentA_Category",
+  "version": "0.4.0",
+  "summary": "A short description of ComponentA_Category.",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HOMHOG": "104"
+  },
+  "homepage": "https://github.com/HOMHOG/ComponentA_Category",
+  "description": "TODO: Add long description of the pod here.",
+  "source": {
+    "http": "https://raw.githubusercontent.com/HOMHOG/ComponentA_Category/master/Product/ComponentA_Category.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "ios": {
+    "vendored_frameworks": "ComponentA_Category/ComponentA_Category.framework"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "dependencies": {
+    "CTMediator": [
+    ]
+  }
+}
