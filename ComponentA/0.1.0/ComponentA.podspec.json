@@ -1,0 +1,25 @@
+{
+  "name": "ComponentA",
+  "version": "0.1.0",
+  "summary": "A short description of ComponentA.",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HOMHOG": "104"
+  },
+  "homepage": "https://github.com/HOMHOG/ComponentA",
+  "description": "TODO: Add long description of the pod here.",
+  "source": {
+    "http": "https://raw.githubusercontent.com/HOMHOG/ComponentA/master/Product/ComponentA.zip",
+    "type": "zip"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "vendored_frameworks": "ComponentA/ComponentA.framework"
+  }
