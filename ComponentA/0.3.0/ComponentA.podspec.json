@@ -2,24 +2,33 @@
   "name": "ComponentA",
   "version": "0.3.0",
   "summary": "A short description of ComponentA.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/HOMHOG/ComponentA",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "HOMHOG": "104"
+    "HOMHOG": "861573477@qq.com"
   },
-  "homepage": "https://github.com/HOMHOG/ComponentA",
-  "description": "TODO: Add long description of the pod here.",
   "source": {
-    "http": "https://raw.githubusercontent.com/HOMHOG/ComponentA/master/Product/ComponentA.zip",
-    "type": "zip"
+    "git": "https://github.com/HOMHOG/ComponentA.git",
+    "tag": "0.3.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
+  },
+  "source_files": "Product/ComponentA/ComponentA.framework/Headers/*.{h}",
+  "vendored_frameworks": "Product/ComponentA/ComponentA.framework",
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
   "user_target_xcconfig": {
     "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
   },
-  "vendored_frameworks": "ComponentA/ComponentA.framework"
+  "dependencies": {
+    "CTMediator": [
+
+    ]
   }
+}
